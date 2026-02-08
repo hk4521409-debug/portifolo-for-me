@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hemanth Kumar U | Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Hemanth Kumar U - Full Stack Developer & AI Enthusiast Portfolio">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body{font-family:Poppins, sans-serif;}
+    .glass{backdrop-filter: blur(12px); background: rgba(255,255,255,0.6);}
+    .dark .glass{background: rgba(0,0,0,0.4);}
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-50 to-blue-100 dark:from-slate-900 dark:to-slate-800 text-gray-800 dark:text-white">
+
+<!-- NAVBAR -->
+<header class="fixed w-full top-0 z-50 glass shadow">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="font-bold text-xl">Hemanth Kumar U</h1>
+
+    <nav class="hidden md:flex gap-6 font-medium">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Dark Mode -->
+    <button onclick="toggleDark()" class="text-xl">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center text-center px-6">
+  <div>
+    <h2 class="text-4xl md:text-6xl font-bold mb-4">
+      Hi, I'm Hemanth 👋
+    </h2>
+
+    <h3 class="text-xl md:text-2xl text-blue-600 dark:text-blue-400 mb-6">
+      <span id="typing"></span>
+    </h3>
+
+    <p class="max-w-xl mx-auto mb-8 opacity-80">
+      Passionate Full Stack Developer focused on building intelligent,
+      scalable and impactful digital experiences.
+    </p>
+
+    <div class="flex gap-4 justify-center">
+      <a href="#projects" class="px-6 py-3 bg-blue-600 text-white rounded-xl shadow hover:scale-105 transition">
+        View Projects
+      </a>
+      <a href="#" class="px-6 py-3 border border-blue-600 rounded-xl hover:bg-blue-600 hover:text-white transition">
+        Download Resume
+      </a>
+    </div>
+
+    <div class="flex gap-5 justify-center mt-6 text-xl">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-20 max-w-5xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-6">About Me</h2>
+  <div class="glass p-6 rounded-2xl shadow">
+    <p class="opacity-80">
+      I am a student, developer, and technology enthusiast interested in
+      AI, web systems, and solving real-world problems through software.
+      I love building modern, high-performance applications.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-20 bg-white/40 dark:bg-white/5">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Skills</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="glass p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Frontend</h3>
+        <p>HTML, CSS, JavaScript, React, Tailwind</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Backend</h3>
+        <p>Node.js, Java, Spring Boot</p>
+      </div>
+
+      <div class="glass p-6 rounded-xl">
+        <h3 class="font-semibold mb-4">Database & Tools</h3>
+        <p>MySQL, Git, GitHub, VS Code</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-20 max-w-6xl mx-auto px-6">
+  <h2 class="text-3xl font-bold mb-10">Projects</h2>
+
+  <div class="grid md:grid-cols-2 gap-8">
+
+    <div class="glass rounded-xl overflow-hidden shadow hover:scale-105 transition">
+      <img src="https://via.placeholder.com/600x350" class="w-full"/>
+      <div class="p-5">
+        <h3 class="font-semibold text-lg">Smart Calculator PWA</h3>
+        <p class="opacity-70 text-sm my-2">
+          Multi-purpose intelligent calculator with offline support.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="text-blue-600">GitHub</a>
+          <a href="#" class="text-blue-600">Live</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass rounded-xl overflow-hidden shadow hover:scale-105 transition">
+      <img src="https://via.placeholder.com/600x350" class="w-full"/>
+      <div class="p-5">
+        <h3 class="font-semibold text-lg">Portfolio System</h3>
+        <p class="opacity-70 text-sm my-2">
+          Personal branding site with admin controls.
+        </p>
+        <div class="flex gap-3">
+          <a href="#" class="text-blue-600">GitHub</a>
+          <a href="#" class="text-blue-600">Live</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-white/40 dark:bg-white/5">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+    <form class="glass p-6 rounded-xl grid gap-4">
+      <input class="p-3 rounded bg-white/70 text-black" placeholder="Your Name"/>
+      <input class="p-3 rounded bg-white/70 text-black" placeholder="Your Email"/>
+      <textarea class="p-3 rounded bg-white/70 text-black" rows="4" placeholder="Message"></textarea>
+      <button class="bg-blue-600 text-white py-3 rounded">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-6 opacity-60">
+  © 2026 Hemanth Kumar U. Built with passion.
+</footer>
+
+<!-- JS -->
+<script>
+const roles = [
+  "Full Stack Developer",
+  "AI Enthusiast",
+  "Problem Solver",
+  "Tech Innovator"
+];
+
+let i=0, j=0, current="", isDeleting=false;
+function type(){
+  current = roles[i];
+  document.getElementById("typing").textContent =
+    isDeleting ? current.substring(0,j--) : current.substring(0,j++);
+
+  if(!isDeleting && j===current.length+1){isDeleting=true;setTimeout(type,1000);return;}
+  if(isDeleting && j===0){isDeleting=false;i=(i+1)%roles.length;}
+  setTimeout(type, isDeleting?50:100);
+}
+type();
+
+function toggleDark(){
+  document.documentElement.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
